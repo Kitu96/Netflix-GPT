@@ -21,3 +21,11 @@
 - NetflixGPT
   -SearchBar
   -MovieSuggestions
+
+# css used:
+
+absolute=> merge
+bg-gradient-to-b from-black
+absolute
+relative
+z-10
