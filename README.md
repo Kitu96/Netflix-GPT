@@ -65,4 +65,5 @@ firebase deploy
 - Update Profile(updateProfile from firebase)
 - Fetch from TMDB Movies
   BugFix:SignUp userdisplayName and profile picture update
-  BugFix:if user not logged in Redirect/Browse to LoginPage / vice versa
+  BugFix:if user not logged in Redirect/Browse to LoginPage / vice versa(Put onAuthStateChanged in Header component and navigate from here )
+- Unsubscribed to the onAuthStateChanged callback
