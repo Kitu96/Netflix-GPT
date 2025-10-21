@@ -13,7 +13,6 @@ const[errorMessage,setErrorMessage] = useState("");
 const email = useRef(null);
 const name = useRef(null)
 const password= useRef(null);
-const navigate = useNavigate();
 const dispatch = useDispatch();
 
 const handleButtonClick = () => {
@@ -28,7 +27,7 @@ if (isSignInForm) {
   signInWithEmailAndPassword(auth, email.current.value, password.current.value)
     .then((userCredential) => {
       console.log("Signed in:", userCredential.user);
-      navigate("/browse");
+
     })
     .catch((error) => {
       console.error("Sign in error code:", error.code);
@@ -46,7 +45,6 @@ if (isSignInForm) {
 }).then(() => {
    const {uid,email,displayName,photoURL} = auth.currentUser;
       dispatch(addUSer(uid,email,displayName,photoURL));
-  navigate("/browse");
 }).catch((error) => {
   setErrorMessage(error.message);
 });

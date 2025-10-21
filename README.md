@@ -64,4 +64,5 @@ firebase deploy
 - Implemented signout(signOut(auth) from Firebase)
 - Update Profile(updateProfile from firebase)
 - Fetch from TMDB Movies
-  x
+  BugFix:SignUp userdisplayName and profile picture update
+  BugFix:if user not logged in Redirect/Browse to LoginPage / vice versa

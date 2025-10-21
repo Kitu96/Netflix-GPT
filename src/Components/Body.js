@@ -10,18 +10,6 @@ import { addUSer, removeUser } from "../utils/userSlice";
 export default function Body(){
   const dispatch = useDispatch();
 
-useEffect(()=>{
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    const {uid,email,displayName,photoURL} = user;
-    dispatch(addUSer(uid,email,displayName,photoURL));
-  } else {
-  dispatch(removeUser());
-  }
-});
-},[])
-
-
   const appRouter = createBrowserRouter([
     {
       path: "/",
