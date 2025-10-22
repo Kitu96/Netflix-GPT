@@ -1,3 +1,9 @@
+API Read Access Token
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDkzZGM3YzdiMDBjODE5ZTViMmZkYjYzNDc1NmRkOSIsIm5iZiI6MTc2MTA1ODg3Mi43NjksInN1YiI6IjY4ZjdhMDM4NmNjOWY2NGZhNTY5MWFjNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lU30vlaHiM3ZqfXuPz3NO3xsBds3zM-5gDb0pIIVQ0E
+
+API Key:
+7093dc7c7b00c819e5b2fdb634756dd9
+
 # Netflix GPT
 
 ---
@@ -67,3 +73,27 @@ firebase deploy
   BugFix:SignUp userdisplayName and profile picture update
   BugFix:if user not logged in Redirect/Browse to LoginPage / vice versa(Put onAuthStateChanged in Header component and navigate from here )
 - Unsubscribed to the onAuthStateChanged callback
+- Add hardcoded values to the constatnt files
+- Register TMDB API and create an APP and get access token
+- Get data from TMDB now playing movies list API
+- Separate Hook folder ==>useNowplayingMovies hook
+
+# MainConatiner
+
+    - NowPlaying Movies
+    - Title
+
+# Secondary container
+
+- List of Movies \* N
+- Cards \* N
+
+- custom Hook for Now Playing Movies
+- Create MovieSlice
+- Update Store with Movie Data
+- Planning MainContiner(Video Title, Video overview , Play Button, MoreInfo Button)
+- Planning SeconadryContainer
+- Fetch Data for getTrailerVideo
+- Update Store with Trailer Video Data
+- Embeded YouTube Video and Make it autoPlay and mute
+-
