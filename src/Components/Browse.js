@@ -3,16 +3,16 @@ import Header from './Header'
 import useNowPlayingMovies from '../Hooks/useNowPlayingMovies'
 import MainContainer from './MainContainer';
 import SecondaryContainer from './SecondaryContainer';
+import usePopularMovies from '../Hooks/usePopularMovies';
 
 function Browse() {
   useNowPlayingMovies();
+  usePopularMovies();
   return (
     <div>
-      <h1>
-        <Header/>
+         <Header/>
         <MainContainer/>
-        <SecondaryContainer/>
-      </h1>
+        <SecondaryContainer/>   
     </div>
   )
 }
